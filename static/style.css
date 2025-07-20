@@ -1,0 +1,78 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2a2a72;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    background-color: #fdbb2d;
+    border-radius: 5px;
+    color: #2a2a72 !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('{{ url_for('static', filename='images/banner.jpg') }}') no-repeat center center/cover;
+    padding: 100px 0;
+    text-align: center;
+}
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fdbb2d;
+}
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.hero-section .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+/* Services Section */
+.service-card {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+.service-card:hover {
+    transform: scale(1.05);
+}
+.service-card h5 {
+    font-size: 1.5rem;
+    color: #2a2a72;
+}
+.service-card p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #2a2a72;
+    color: white;
+    padding: 15px;
+}

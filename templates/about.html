@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Insurance Premium Prediction</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+        }
+        .hero-section {
+            background: url("{{ url_for('static', filename='images/a11.jpg') }}") no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .hero-buttons .btn {
+            margin: 10px;
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .info-section {
+            padding: 60px 20px;
+            background: white;
+        }
+        .info-box {
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+        }
+        .info-box:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">NextGen Insurance</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/predict">Prediction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/help">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <h1>About Our Insurance Services</h1>
+        <p>Committed to providing secure and reliable insurance solutions tailored for your needs.</p>
+        <div class="hero-buttons">
+            <a href="#services" class="btn">Our Services</a>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="container info-section">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="info-box">
+                    <h4>Innovation & Growth</h4>
+                    <p>We leverage technology to enhance insurance solutions and provide better services.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-box">
+                    <h4>Customer-Centric Approach</h4>
+                    <p>Our priority is customer satisfaction, ensuring seamless and efficient processes.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-box">
+                    <h4>Comprehensive Coverage</h4>
+                    <p>We offer tailored policies to meet your financial security and protection needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 NextGen Insurance. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
